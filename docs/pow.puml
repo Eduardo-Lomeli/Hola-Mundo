@@ -1,0 +1,40 @@
+@startuml Pow
+
+class Pow
+class Juego
+class JuegoPelota
+class JuegoCarro
+class Carro
+class Moneda
+class Jabon
+class Ojos
+class Boca
+class Alien
+class Montaña
+Class Tienda
+class Comida
+
+
+Juego <|-- JuegoPelota
+Pow --|> Alien
+Juego <|-- JuegoCarro
+Comida <|-- Carne
+
+
+Juego *-- Moneda
+Pow *-- Ojos
+Pow *-- Boca
+Tienda *-- Jabon
+
+Pow o-- Jabon
+Pow o-- Moneda
+JuegoCarro o-- Montaña
+Tienda o-- Moneda
+JuegoCarro o-- Carro
+JuegoPelota o-- Pelota
+Pow o-- Juego
+Pow o-- Comida
+
+
+
+@enduml
