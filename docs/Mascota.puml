@@ -1,0 +1,17 @@
+@startuml Mascota
+
+class Mascota
+{
+    - vida : int
+    + Comer(alimento:Alimento)
+}
+
+class Alimento
+{
+    - energia : int
+    + ExtraerEnergia()
+}
+
+Mascota o-- Alimento
+
+@enduml

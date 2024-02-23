@@ -1,6 +1,14 @@
 @startuml Pow
 
 class Pow
+{
+    - color
+    - tamaño
+    - torcentajeSalud
+    + Comer()
+    + Cagar()
+    + Duchar()
+}
 class Juego
 class JuegoPelota
 class JuegoCarro
